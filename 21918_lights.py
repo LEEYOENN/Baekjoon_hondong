@@ -1,7 +1,7 @@
 n,m = map(int, input().split())
 
 lights = (list(map(int, input().split())))
-print(lights)
+##print(lights)
 
 for i in range(m):
     method, l, r = map(int, input().split())
