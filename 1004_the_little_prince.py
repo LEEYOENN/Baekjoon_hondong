@@ -15,7 +15,7 @@ for i in range(t) :
         dist_with_destination = (((cx - x2)**2) + ((cy - y2)**2))**(1/2)
         
         #원의 중점과 출발지와의 거리와 도착점과의 거리리
-        print(dist_with_start, dist_with_destination)
+        #print(dist_with_start, dist_with_destination)
         
         if(dist_with_start < r and dist_with_destination < r) :
             continue
