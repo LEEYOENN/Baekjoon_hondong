@@ -1,5 +1,5 @@
 # 0 <  N< 1,000,000,000 , 2 <= L <= 100
-n, l = map(int, input().split())
+#n, l = map(int, input().split())
 # finish = False
 # rslt = []
 
@@ -24,6 +24,9 @@ n, l = map(int, input().split())
 
 # if sum(rslt) != n or len(rslt) < l or len(rslt) > 100 :
 #     print(-1)
+
+# 0 <  N< 1,000,000,000 , 2 <= L <= 100
+n, l = map(int, input().split())
 
 rslt = []
 for i in range(l, 101) :
