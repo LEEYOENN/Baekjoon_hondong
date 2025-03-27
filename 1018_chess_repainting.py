@@ -26,7 +26,6 @@ for i in range(n - 7):
                         cntW += 1
                     elif y % 2 == 0 and board[k][l] != "W":
                         cntB += 1
-                    else: continue
                 else:
                     if y % 2 == 1 and board[k][l] != "B":
                         cntW += 1
@@ -36,7 +35,6 @@ for i in range(n - 7):
                         cntW += 1
                     elif y % 2 == 0 and board[k][l] != "B":
                         cntB += 1
-                    else: continue
                 y += 1
             x += 1
          
