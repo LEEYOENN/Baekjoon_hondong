@@ -14,8 +14,6 @@ while n >= 0 :
         break
     bag += 1
         
-    
- 
 
 print(bag)
 
