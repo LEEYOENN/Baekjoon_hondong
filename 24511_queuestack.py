@@ -1,12 +1,12 @@
 import sys
 input = sys.stdin.readline
 from collections import deque
-N = int(input())
-A = list(map(int, input().split()))
-B = list(map(int, input().split()))
+N = int(input()) ##자료구조 개수
+A = list(map(int, input().split())) #큐인지 스택인지
+B = list(map(int, input().split())) #자료구조 초기 값
 
-M = int(input())
-C = list(map(int, input().split()))
+M = int(input()) #새로 입력할 값 개수
+C = list(map(int, input().split())) #새로 입력할 값
 
 # A[i] == 0인 위치에 있는 값만 뽑아와서 별도 deque로 저장
 qstack = deque([B[i] for i in range(N) if A[i] == 0])
@@ -22,6 +22,7 @@ for num in C:
 sys.stdout.write(" ".join(map(str, rslt)) + " ")
 
 
+##Queue인 인덱스만 뽑아서 - 시간초과
 # zero_idx = [ i for i in range(N) if A[i] == 0 ]
 
 # result = []
@@ -31,7 +32,8 @@ sys.stdout.write(" ".join(map(str, rslt)) + " ")
 #     for i in zero_idx:
 #         temp, B[i] = B[i], temp
 #     result.append(temp)
-    
+
+#전체 이중반복문 돌면서 - 시간초과
 # sys.stdout.write(" ".join(map(str, result)) + " ")
 # for j in range(M):
 #     num = C[j]
@@ -42,4 +44,4 @@ sys.stdout.write(" ".join(map(str, rslt)) + " ")
 #             num = temp
 #         elif A[i] == 1:
 #             continue
-#     print(num)      
+#      print(num)      
