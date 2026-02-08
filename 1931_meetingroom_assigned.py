@@ -7,6 +7,18 @@ n = int(input())
 meeting = []
 
 for _ in range(n):
-    # 시작 시간(s), 끝나는 시간(e) 입력받아 리스트에 추가
-    s, e = map(int, input().split())
-    meeting.append((s, e))
+    start, end = map(int, input().split())
+    meeting.append((start, end))
+
+
+meeting.sort(key=lambda x: (x[1], x[0]))
+
+end_time = 0
+cnt = 0
+
+for start, end in meeting:
+    if start >= end_time:
+        cnt += 1
+        end_time = end
+
+print(cnt)
