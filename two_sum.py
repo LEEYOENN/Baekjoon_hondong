@@ -13,3 +13,8 @@ def solution(nums, target):
         num_map[num] = i
     
     return []
+
+if __name__ == '__main__':
+    nums = [2, 7, 11, 15]
+    target = 9
+    print(solution(nums, target))
