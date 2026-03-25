@@ -11,3 +11,6 @@ user_input = input()
 
 info = ast.literal_eval(user_input)
 print(info)
+
+for i, idx in enumerate(info):
+    print(i, idx)
